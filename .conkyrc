@@ -1,0 +1,150 @@
+
+# conky configuration
+# edited by darcon@gmail.com
+
+# set to yes if you want Conky to be forked in the background
+background yes
+
+# X font when Xft is disabled, you can pick one with program xfontsel
+#font 5x7
+#font 6x10
+#font 7x13
+#font 8x13
+#font 9x15
+#font *mintsmild.se*
+#font -*-*-*-*-*-*-34-*-*-*-*-*-*-*
+
+
+# Use Xft?
+use_xft yes
+
+# Xft font when Xft is enabled
+#xftfont Bitlktream Vera Sans Mono:size=8
+xftfont Terminus:size=9
+
+# Text alpha when using Xft
+xftalpha 0.8
+
+# Print everything to console?
+# out_to_console no
+
+# mail spool
+#mail_spool $MAIL
+
+# Update interval in seconds
+update_interval 2.0
+
+# This is the number of times Conky will update before quitting.
+# Set to zero to run forever.
+total_run_times 0
+
+# Create own window instead of using desktop (required in nautilus)
+own_window yes
+own_window_type override
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+
+# Use double buffering (reduces flicker, may not work for everyone)
+double_buffer yes
+
+# Minimum size of text area
+minimum_size 1000 5
+
+# Draw shades?
+draw_shades no
+
+# Draw outlines?
+draw_outline no
+
+# Draw borders around text
+draw_borders no
+
+# Stippled borders?
+stippled_borders 8
+
+# border margins
+border_margin 4
+
+# border width
+border_width 3
+
+# Default colors and also border colors
+default_color 499b49
+default_shade_color black
+default_outline_color #ddaa00
+
+# Text alignment, other possible values are commented
+#alignment top_left
+alignment top_right
+#alignment bottom_left
+#alignment bottom_right
+
+# Gap between borders of screen and text
+# same thing as passing -x at command line
+gap_x -600
+gap_y 500
+
+# Subtract file system buffers from used memory?
+no_buffers yes
+
+# set to yes if you want all text to be in uppercase
+uppercase no
+
+# number of cpu samples to average
+# set to 1 to disable averaging
+cpu_avg_samples 2
+
+# number of net samples to average
+# set to 1 to disable averaging
+net_avg_samples 2
+
+# Force UTF8? note that UTF8 support required XFT
+override_utf8_locale yes
+
+
+# Add spaces to keep things from moving about? This only affects certain objects.
+use_spacer yes
+#Note: doesn't work in conky 1.2 =(
+
+
+# variable is given either in format $variable or in ${variable}. Latter
+# allows characters right after the variable and must be used in network
+# stuff because of an argument
+
+# stuff after 'TEXT' will be formatted on screen
+
+color1 499b49
+
+TEXT
+#${offset 240}${color slate grey}Kernel: ${kernel}
+${offset 240}${color1}UpTime: ${color1}$uptime
+${offset 240}${color1}CPU:${color1} $cpu% 
+#${offset 240}${color1}Load: ${color1 }$loadavg
+#${offset 240}${color1}Processes: ${color1 }$processes
+#${offset 240}${color1}Running: ${color1 }$running_processes
+
+${offset 240}${color1}Highest CPU:
+${offset 240}${color1} ${top name 1}${top_mem cpu 1}
+${offset 240}${color1} ${top name 2}${top cpu 2}
+#${offset 240}${color1} ${top name 3}${top cpu 3}
+#${offset 240}${color1} ${top name 4}${top cpu 4}
+
+
+${offset 240}${color1}MEM: ${color1} $memperc% $mem/$memmax
+${offset 240}${membar 5,100}
+#${offset 240}${color slate gray}SWAP: ${color slate gray}$swapperc% $swap/$swapmax
+#${offset 240}${swapbar 5,100}
+
+${offset 240}${color1}Highest MEM:
+${offset 240}${color1} ${top_mem name 1}${top_mem mem 1}
+${offset 240}${color1} ${top_mem name 2}${top_mem mem 2}
+#${offset 240}${color1} ${top_mem name 3}${top_mem mem 3}
+#${offset 240}${color slate gray} ${top_mem name 4}${top_mem mem 4}
+
+
+${offset 240}${color1}ROOT: ${color1}${fs_free /}/${fs_size /}
+${offset 240}${fs_bar 5,100 /}
+
+${offset 240}${color1} Down: ${downspeed eth0}  ${totaldown eth0}
+${offset 240}${color1} Up: ${upspeed eth0} ${totalup eth0}
+
