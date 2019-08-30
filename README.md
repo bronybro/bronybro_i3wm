@@ -1,5 +1,5 @@
-# bronybro_i3wm-
-My i3, i3status and conky .config files  
+# bronybro_i3wm
+i3, i3status and conky .config files  
 
 Resolution of using monitor: 1024х768 
 
