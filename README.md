@@ -31,3 +31,6 @@ Terminal emulator: _**sakura**_
 Terminal font: _**Anonymous Pro**_  
 shell: _**zsh**_  
 zsh theme: _**funky**_ 
+
+
+
