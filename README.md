@@ -11,22 +11,23 @@ Directory for i3 _**config**_ file:
 <h1>i3status.conf</h1>
 Directories for _**i3status.conf**_ file:  
 
-    ~/.config/i3status/config (or $XDG_CONFIG_HOME/i3status/config if set)        
-    /etc/xdg/i3status/config (or $XDG_CONFIG_DIRS/i3status/config if set)      
-    ~/.i3status.conf       
+    ~/.config/i3status/config (or $XDG_CONFIG_HOME/i3status/config if set)
+    
+    /etc/xdg/i3status/config (or $XDG_CONFIG_DIRS/i3status/config if set)
+    
+    ~/.i3status.conf
+    
     /etc/i3status.conf  
     
 <h1>.conkyrc</h1>
 Directories for _**conkyrc**_ file:  
 
-    /etc/conky/conky.conf-- 
-    ~/.conkyrc-- 
+    /etc/conky/conky.conf 
+    
+    ~/.conkyrc 
     
 <h2>More recomendations</h2>
 Terminal emulator: _**sakura**_  
-
 Terminal font: _**Anonymous Pro**_  
-
 shell: _**zsh**_  
-
 zsh theme: _**funky**_ 
