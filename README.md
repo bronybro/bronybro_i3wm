@@ -6,7 +6,7 @@ Resolution of using monitor: 1024х768
 <h1>i3 config</h1>
 Directory for i3 _**config**_ file:  
 
-    ~/.config/i3/config-- 
+    ~/.config/i3/config 
   
 <h1>i3status.conf</h1>
 Directories for _**i3status.conf**_ file:  
@@ -30,7 +30,8 @@ Directories for _**conkyrc**_ file:
 Terminal emulator: _**sakura**_  
 Terminal font: _**Anonymous Pro**_  
 shell: _**zsh**_  
-zsh theme: _**funky**_ 
+zsh theme: _**funky**_
+
 
 
 
