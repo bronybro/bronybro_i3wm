@@ -1,7 +1,7 @@
 # bronybro_i3wm
 i3, i3status and conky .config files  
 
-Resolution of using monitor: 1024х768 
+Resolution of using monitor: 1920х1080 
 
 <h1>i3 config</h1>
 Directory for i3 config file:  
