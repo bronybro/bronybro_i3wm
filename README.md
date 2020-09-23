@@ -26,7 +26,7 @@ Directories for conkyrc file:
     
     ~/.conkyrc 
     
-
+![screenshot](screenshot.png)
 
 
 
