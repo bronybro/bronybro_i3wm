@@ -1,4 +1,3 @@
-
 # i3status configuration file.
 # see "man i3status" for documentation.
 
@@ -18,13 +17,13 @@ order += "tztime local"
 
 
 tztime local {
-        format = " %H:%M:%S                                                                                                                                                                                                                          "
+        format = " %H:%M:%S |  %d.%m.%Y "
 }
 
 
 volume master {
-        format = " vol.: %volume "
-        format_muted = "♪:  (%volume)"
+        format = ": %volume "
+        format_muted = "  %volume"
         device = "default"
         mixer = "Master"
         mixer_idx = 0
